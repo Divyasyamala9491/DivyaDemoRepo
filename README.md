@@ -1,2 +1,2 @@
 # This-is-my-1st-repo
-created for practice
+Sample Repo for uploading project files
