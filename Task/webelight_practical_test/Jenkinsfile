@@ -1,7 +1,7 @@
 node{
      
     stage('SCM Checkout'){
-        git url: 'https://gitlab.com/devopswebelight/webelight_practical_test.git',branch: 'master'
+        git url: 'https://github.com/Divyasyamala9491/DivyaDemoRepo.git',branch: 'main'
     }
   
     
@@ -10,8 +10,8 @@ node{
     }
     
     stage('Push Docker Image'){
-        withCredentials([string(credentialsId: 'Docker_Hub_Pwd', variable: 'Docker_Hub_Pwd')]) {
-          sh "docker login -u karthikeyinid -p ${Docker_Hub_Pwd}"
+        withCredentials([string(credentialsId: 'Divya', variable: 'Docker_Hub_Pwd')]) {
+          sh "docker login -u Divya111 -p ${Kashik@143}"
         }
         sh 'docker push karthikeyinid/webelight_practical_test'
      }
